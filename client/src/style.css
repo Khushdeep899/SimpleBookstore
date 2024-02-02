@@ -1,0 +1,171 @@
+/* General Layout and Spacing */
+.App {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    text-align: center;
+  }
+  
+  /* Typography */
+  body, input, button {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  h1 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+  }
+  
+  /* Buttons and Interactions */
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #008080; /* Teal color */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    margin: 10px; 
+  }
+  
+  button:hover {
+    background-color: #004d40; /* Darker shade of teal for hover state */
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  button.addHome {
+    background-color: #006666; /* Distinct color for primary action */
+    font-size: 1.1rem;
+  }
+  
+  /* Book Cards */
+  .books {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .book {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 220px; /* Fixed width for consistency */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    height: 500px; /* Fixed height for consistency */
+  }
+
+  /* Text Content Below Book Cover */
+.book-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distributes space evenly */
+    flex: 1; /* Takes up the remaining space */
+    width: 100%; /* Use the full width of the parent */
+    text-align: center;
+  }
+  
+  .book-title, .book-description, .book-price {
+    margin-bottom: 10px;
+  }
+  
+  /* Button Container to keep buttons at the bottom */
+  .book-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  
+  .book:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+  
+  .book img {
+    max-width: 100%;
+    max-height: 260px; 
+    object-fit: cover; 
+    margin-bottom: 15px;
+  }
+  
+  .book-cover {
+    width: 100%; 
+    height: auto;
+    border-radius: 5px; 
+    margin-bottom: 15px; 
+  }
+  
+  
+  .book h2 {
+    font-size: 1.2rem;
+    margin: 5px 0;
+  }
+  
+  .book p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #555;
+  }
+  
+  .book span {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Forms for Add and Update Books */
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+  }
+  
+  .form input[type="text"],
+  .form input[type="number"],
+  .form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  .form button {
+    width: 100%;
+    max-width: 200px; /* Control the button width */
+    margin: auto; /* Center the button */
+  }
+  
+  /* Responsive Design */
+  @media only screen and (max-width: 768px) {
+    .App {
+      padding: 10px;
+    }
+  
+    .books {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .book {
+      width: auto;
+    }
+  }
+  
