@@ -12,7 +12,10 @@ Khusdeep's Bookstore is a full-stack react web application that allows users to 
 
 
 Demo:
+<img width="1680" alt="Screenshot 2024-02-01 at 9 12 16 PM" src="https://github.com/Khushdeep899/SimpleBookstore/assets/34795705/08f40cb6-1a9e-4d37-86a0-f65472e45d1e">
 
+<img width="1680" alt="Screenshot 2024-02-01 at 9 12 32 PM" src="https://github.com/Khushdeep899/SimpleBookstore/assets/34795705/8ce2917d-def1-4c4a-a677-38297cfce25a">
+<img width="1680" alt="Screenshot 2024-02-01 at 9 12 39 PM" src="https://github.com/Khushdeep899/SimpleBookstore/assets/34795705/f1329346-426a-46f1-8571-2dd2c96f633d">
 
 
 ## Installation
